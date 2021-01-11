@@ -20,13 +20,12 @@ const Home = (props) => {
         ).then((response) => {
             return response.json();
         }).then((data) => {
-            debugger;
             if (data) {
                 // let Typeblob = new Blob([data.file], { type: data.format });
                 // let Dataurl = URL.createObjectURL(Typeblob);
                 // data.file = Dataurl;
                 // props.fnPostSocialFeed(data);
-                fnServerFileHandler(data);
+                // fnServerFileHandler(data);
             }
         }).catch((error) => console.log(error));
     }, []);
@@ -113,19 +112,19 @@ const Home = (props) => {
                 // videoElement.setAttribute('type', file.type);
                 // videoElement.appendChild(source);
                 // videoElement.src = url;
-                formData.append("myfiles", file);
-            // oPayload = {
-            //     file: reader.result,
-            //     user: "UserName",
-            //     fileType: fileType,
-            //     format: file.type,
-            //     date: new Date().toISOString().split("T")[0]
-            // };
+                // formData.append("myfiles", file);
+                oPayload = {
+                    file: reader.result,
+                    user: "UserName",
+                    fileType: fileType,
+                    format: file.type,
+                    date: new Date().toISOString().split("T")[0]
+                };
             // setPayload(oPayload);
         }
-        fnPostVideoHandler(formData);
-        // props.fnPostSocialFeed(oPayload);
-        // setShowProgressBar(false);
+        // fnPostVideoHandler(formData);
+        props.fnPostSocialFeed(oPayload);
+        setShowProgressBar(false);
     };
 
     const addListeners = (reader) => {
