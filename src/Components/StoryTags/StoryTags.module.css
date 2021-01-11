@@ -1,0 +1,28 @@
+.StoryList {
+    width: 95%;
+    margin: 5px;
+    /* background-color: grey; */
+    min-height: 60px;
+    height: auto;
+    display: block;
+}
+
+.StoryUserName {
+    /* margin-top: 10px; */
+    font-weight: bold;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.StoryProfilePic {
+    width: 90%;
+    margin: 5px;
+}
+
+.StoryList:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 5px #51515224;
+}

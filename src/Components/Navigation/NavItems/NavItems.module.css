@@ -1,0 +1,19 @@
+.NavItems {
+    padding: 10px 10px;
+}
+
+.SearchInput {
+    height: 37px;
+    width: 70%;
+    margin: 6px 0px;
+    border-radius: 5px;
+    float: left;
+}
+
+.SearchBtn{
+    float: left;
+    width: 9%;
+    height: 37px;
+    margin: 6px 0px;
+    border-radius: 5px;
+}
