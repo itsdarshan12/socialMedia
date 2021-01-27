@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import classes from './Home.module.css';
 import Aux from '../../HOC/Auxiliary/Auxiliary';
-import { Container, Col, Row, Button, ProgressBar } from 'react-bootstrap';
+import { Col, Row, ProgressBar } from 'react-bootstrap';
 import * as MediaActions from '../../Assets/MediaActions/MediaActions';
 import { connect } from 'react-redux';
 import SideNavCard from '../../Components/SideNavItems/SideNavItems';
@@ -222,7 +222,14 @@ const Home = (props) => {
 
     const aSocialFeed = [...props.aSocialPost];
     let xSocialPost = aSocialFeed.map((oFeed, index) => {
-        return (<SocialPost key={index} ProfileName={oFeed.user} fileType={oFeed.fileType} date={oFeed.date} file={oFeed.file} />
+        return (<SocialPost key={index}
+            ProfileName={oFeed.user}
+            fileType={oFeed.fileType}
+            iLikes={oFeed.iLikes}
+            iDisLikes={oFeed.iDisLikes}
+            date={oFeed.date}
+            file={oFeed.file}
+            aComments={oFeed.aComments} />
         );
     });
 
@@ -233,32 +240,9 @@ const Home = (props) => {
         );
     });
     return (
-        <Container>
+        <Aux>
             <Row>
-                <Col sm={3} className={classes.SideMenu}>
-                    <div className={classes.UserProfileCard}>
-                        <Col sm={4} className={classes.FloatLeft}>
-                            <img src={MediaActions.User} alt="ProfilePic" className={classes.ProfilePic} />
-                        </Col>
-                        <Col sm={8} className={classes.FloatLeft}>
-                            <p className={classes.ProfileName}>User Profile Name</p>
-                            <p>username</p>
-                        </Col>
-                    </div>
-                    <div className={classes.NavigationPanel}>
-                        <Aux>
-                            {xSideNavList}
-                        </Aux>
-                    </div>
-                    <div className={classes.SidePagesList}>
-                        <p className={classes.PagesListHeading}>PAGES YOU LIKE - {(iPageLikeCount)}</p>
-                        <hr />
-                        <Aux>
-                            {xPagesYouLike}
-                        </Aux>
-                    </div>
-                </Col>
-                <Col sm={6}>
+                <Col sm={8}>
                     <div className={classes.FeedMenu}>
                         <p className={classes.FeedHeading}>Post Something</p>
                         <hr />
@@ -287,7 +271,7 @@ const Home = (props) => {
                         </Aux>
                     </div>
                 </Col>
-                <Col sm={3}>
+                <Col sm={4}>
                     <div className={classes.EventMenu}>
                         <p className={classes.EventHeading}>Stories</p>
                         <hr />
@@ -304,7 +288,7 @@ const Home = (props) => {
                     </div>
                 </Col>
             </Row>
-        </Container >
+        </Aux>
     );
 }
 

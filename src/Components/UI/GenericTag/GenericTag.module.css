@@ -1,0 +1,24 @@
+.GenericTag {
+    min-width: 12%;
+    width: auto;
+    height: 25px;
+    background-color: #e2dcdc;
+    border-left: 6px solid #1a45d3;
+    border-radius: 5px;
+    float: left;
+    margin: 5px;
+    padding: 1px;
+}
+
+.FrndTag {
+    margin: 5px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
+    float: left;
+}
+
+.FrndTagCount {
+    float: left;
+}

@@ -11,6 +11,14 @@
     text-align: center;
 }
 
+.TextAlignRight {
+    text-align: right;
+}
+
+.FloatRight {
+    float: right;
+}
+
 .MoreOptionIcon {
     font-size: 1.5rem;
 }
@@ -66,9 +74,52 @@
     margin: 7px;
 }
 
+.SocialCmtUserPic {
+    width: 9%;
+    margin: 7px;
+    float: left;
+}
+
+.UserComments {
+    margin: 6px;
+}
+
 .SocialCmtInput {
     width: 70%;
     border-radius: 5px;
     margin: 11px;
     height: 33px;
+}
+
+.EmotionContainer {
+    width: 100%;
+    display: flex;
+    height: 50px;
+}
+
+.LikeShareHolder {
+    width: 60%;
+    margin: 2%;
+    height: 40px;
+}
+
+.LikeIcon {
+    font-size: 1.5rem;
+    float: left;
+    margin: 5px;
+}
+
+.LikeIcon:hover {
+    cursor: pointer;
+}
+
+.LikeCount {
+    float: right;
+    margin-right: 5px;
+}
+
+.CommentSection {
+    width: 100%;
+    min-height: 50px;
+    height: auto;
 }

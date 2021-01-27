@@ -1,0 +1,40 @@
+.AuthPageContainer {
+    margin-top: 60px;
+}
+
+.Poster {
+    width: 95%;
+    margin: 5%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.FormContainer {
+    margin: 5px;
+    width: 95%;
+    padding: 15px;
+}
+
+.InputField {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #9e9b9b;
+}
+
+.MarginTop {
+    margin-top: 15px;
+}
+
+.ActionBtn {
+    border-radius: 5px;
+    margin: 5px;
+    background: #36d621;
+    color: #ffffff;
+}
+
+.CancelBtn {
+    background: #8e8e91;
+    border-radius: 5px;
+    margin: 5px;
+    color: #ffffff;
+}

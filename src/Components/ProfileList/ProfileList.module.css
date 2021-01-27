@@ -1,0 +1,44 @@
+.ProfileCard {
+    width: 95%;
+    height: 200px;
+    background-color: #ebe6e6;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 1px 8px 3px #9e939366;
+}
+
+.ProfileCard:hover {
+    box-shadow: 0px 1px 8px 3px #35343466;
+}
+
+.FriendProfileImg {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.ProfileName {
+    font-weight: bold;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0px;
+}
+
+.UserName {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0.5em;
+    margin-inline-end: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

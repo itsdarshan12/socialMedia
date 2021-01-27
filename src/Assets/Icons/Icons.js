@@ -5,6 +5,7 @@ import { FaUserFriends, FaStore, FaLayerGroup } from "react-icons/fa";
 import { MdEventSeat, MdOndemandVideo, MdInsertPhoto, MdInsertDriveFile, MdMoreVert } from "react-icons/md";
 import { GrCode } from "react-icons/gr";
 import { IoIosAttach } from "react-icons/io";
+import { BiLike, BiDislike } from "react-icons/bi";
 
 export const SearchIcon = <BiSearchAlt2 />;
 export const AddUser = <HiOutlineUserAdd />;
@@ -20,3 +21,5 @@ export const CommunitylIcon = <FaLayerGroup />
 export const ReactIcon = <GrCode />
 export const AttachMentIcon = <IoIosAttach />
 export const MoreOptionIcon = <MdMoreVert />
+export const LikeIcon = <BiLike />
+export const DisLikeIcon = <BiDislike />

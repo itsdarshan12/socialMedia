@@ -7,16 +7,18 @@ import { BrowserRouter } from 'react-router-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import Store from './HOC/GlobalStore/Reducer';
-
+import AuthProvider from './HOC/Auth-Context/auth-context';
 const globalStore = createStore(Store);
 
 
 const app = (
-  <BrowserRouter>
-    <Provider store={globalStore}>
-      <App />
-    </Provider>
-  </BrowserRouter>
+  <AuthProvider>
+    <BrowserRouter>
+      <Provider store={globalStore}>
+        <App />
+      </Provider>
+    </BrowserRouter>
+  </AuthProvider>
 );
 
 

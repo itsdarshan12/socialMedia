@@ -2,6 +2,10 @@
     padding: 10px 10px;
 }
 
+.Brand {
+    width: 100%;
+}
+
 .SearchInput {
     height: 37px;
     width: 70%;
@@ -10,10 +14,17 @@
     float: left;
 }
 
-.SearchBtn{
+.SearchBtn {
     float: left;
     width: 9%;
     height: 37px;
     margin: 6px 0px;
     border-radius: 5px;
+}
+
+.LogOut {
+    margin: 10px;
+    border-radius: 5px;
+    background: #203ed3;
+    color: #ffffff;
 }

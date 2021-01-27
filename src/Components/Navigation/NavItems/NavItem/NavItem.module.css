@@ -1,5 +1,6 @@
 .NavItem {
-    width: 70px;
+    min-width: 70px;
+    width: auto;
     text-align: center;
     margin: 10px 16px;
     display: inline-block;
